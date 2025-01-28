@@ -264,4 +264,29 @@ public void DecreaseStation2() {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void test() {
+        Radio radio = new Radio(10);
+        radio.setCurrentStation(7);
+        int expected = 7;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void test1() {
+        Radio radio = new Radio(25);
+        radio.setCurrentStation(15);
+        int expected = 15;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void test2() {
+        Radio radio = new Radio(0);
+        radio.setCurrentStation(9);
+        int expected = 0;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
 }
